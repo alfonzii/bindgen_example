@@ -1,13 +1,11 @@
-use bindgen_example::hello;
+use bindgen_example::{add, subtract};
 
 fn main() {
     unsafe {
-        // let sum = add(5, 3);
-        // let difference = subtract(5, 3);
+        let sum = add(5, 3);
+        let difference = subtract(5, 3);
 
-        // println!("Sum: {}", sum);
-        // println!("Difference: {}", difference);
-        let h = hello();
-        println!("Hello: {}", h);
+        println!("Sum: {}", sum);
+        println!("Difference: {}", difference);
     }
 }
